@@ -1,5 +1,5 @@
 <html lang="en"><head>
-    <title>Code coverage report for node-npmtest-slush/node_modules/slush/lib/taskTree.js</title>
+    <title>Code coverage report for node-npmtest-slush/node_modules/slush/bin/slush.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,23 +192,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-slush">npmtest-slush (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-slush/node_modules/slush/lib/taskTree.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-slush/node_modules/slush/bin/slush.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">25% <small>(1 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">35.94% <small>(46 / 128)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">19.57% <small>(9 / 46)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">29.17% <small>(7 / 24)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">25% <small>(1 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">36.29% <small>(45 / 124)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-slush/node_modules/slush/lib/</a> » taskTree.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-slush/node_modules/slush/bin/</a> » slush.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -224,35 +224,635 @@
 10
 11
 12
-13</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-yes">8</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//#!/usr/bin/env node
 &nbsp;
-module.exports = <span class="fstat-no" title="function not covered">function(tasks) {</span>
-<span class="cstat-no" title="statement not covered">  return Object.keys(tasks).reduce(<span class="fstat-no" title="function not covered">function(prev, task) {</span></span>
-<span class="cstat-no" title="statement not covered">    prev.nodes.push({</span>
-      label: task,
-      nodes: tasks[task].dep
-    });
-<span class="cstat-no" title="statement not covered">    return prev;</span>
-  }, {nodes: []});
-};
+'use strict';
+var gutil = require('gulp-util');
+var prettyTime = require('pretty-hrtime');
+var glob = require('glob');
+var path = require('path');
+var chalk = require('chalk');
+var archy = require('archy');
+var Liftoff = require('liftoff');
+var taskTree = require('../lib/taskTree');
+var log = require('../lib/log');
+var slushPackage = require('../package');
+var argv = require('minimist')(process.argv.slice(2));
+var versionFlag = argv.v || argv.version;
+var params = argv._.slice();
+var generatorAndTasks = params.length ? <span class="branch-0 cbranch-no" title="branch not covered">params.shift().split(':') </span>: [];
+var generatorName = generatorAndTasks.shift();
+&nbsp;
+<span class="missing-if-branch" title="else path not taken">E</span>if (!generatorName) {
+  <span class="missing-if-branch" title="if path not taken">I</span>if (versionFlag) {
+<span class="cstat-no" title="statement not covered">    log(slushPackage.version);</span>
+  } else {
+    logGenerators(getAllGenerators());
+  }
+  process.exit(0);
+}
+&nbsp;
+var generator = getGenerator(generatorName);
+&nbsp;
+<span class="missing-if-branch" title="else path not taken">E</span>if (!generator) {
+  log(chalk.red('No generator by name: "' + generatorName + '" was found!'));
+  log(chalk.red('Try installing it with `npm install -g slush-' + generatorName + '` first.'));
+  process.exit(1);
+}
+&nbsp;
+// Setting cwd and slushfile dir:
+argv.cwd = process.cwd();
+argv.slushfile = path.join(generator.path, 'slushfile.js');
+<span class="cstat-no" title="statement not covered">argv._ = generatorAndTasks;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">var cli = new Liftoff({</span>
+  processTitle: 'slush',
+  moduleName: 'gulp',
+  configName: 'slushfile'
+  // completions: require('../lib/completion') FIXME
+});
+&nbsp;
+<span class="cstat-no" title="statement not covered">cli.on('require', <span class="fstat-no" title="function not covered">function(name) {</span></span>
+<span class="cstat-no" title="statement not covered">  gutil.log('Requiring external module', chalk.magenta(name));</span>
+});
+&nbsp;
+<span class="cstat-no" title="statement not covered">cli.on('requireFail', <span class="fstat-no" title="function not covered">function(name) {</span></span>
+<span class="cstat-no" title="statement not covered">  gutil.log(chalk.red('Failed to load external module'), chalk.magenta(name));</span>
+});
+&nbsp;
+<span class="cstat-no" title="statement not covered">cli.launch(handleArguments, argv);</span>
+&nbsp;
+<span class="fstat-no" title="function not covered">function handleArguments(env) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  var argv = env.argv;</span>
+<span class="cstat-no" title="statement not covered">  var tasksFlag = argv.T || argv.tasks;</span>
+<span class="cstat-no" title="statement not covered">  var tasks = argv._;</span>
+<span class="cstat-no" title="statement not covered">  var toRun = tasks.length ? tasks : ['default'];</span>
+<span class="cstat-no" title="statement not covered">  var args = params;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (versionFlag) {</span>
+<span class="cstat-no" title="statement not covered">    log(slushPackage.version);</span>
+<span class="cstat-no" title="statement not covered">    if (env.modulePackage) {</span>
+<span class="cstat-no" title="statement not covered">      gutil.log(env.modulePackage.version);</span>
+    }
+<span class="cstat-no" title="statement not covered">    if (generator.pkg.version) {</span>
+<span class="cstat-no" title="statement not covered">      console.log('[' + chalk.green('slush-' + generator.name) + '] ' + generator.pkg.version);</span>
+    }
+<span class="cstat-no" title="statement not covered">    process.exit(0);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (!env.modulePath) {</span>
+<span class="cstat-no" title="statement not covered">    gutil.log(chalk.red('No local gulp install found in'), chalk.magenta(generator.path));</span>
+<span class="cstat-no" title="statement not covered">    log(chalk.red('This is an issue with the `slush-' + generator.name + '` generator'));</span>
+<span class="cstat-no" title="statement not covered">    process.exit(1);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (!env.configPath) {</span>
+<span class="cstat-no" title="statement not covered">    log(chalk.red('No slushfile found'));</span>
+<span class="cstat-no" title="statement not covered">    log(chalk.red('This is an issue with the `slush-' + generator.name + '` generator'));</span>
+<span class="cstat-no" title="statement not covered">    process.exit(1);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered">  require(env.configPath);</span>
+<span class="cstat-no" title="statement not covered">  log('Using slushfile', chalk.magenta(env.configPath));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  var gulpInst = require(env.modulePath);</span>
+<span class="cstat-no" title="statement not covered">  gulpInst.args = args;</span>
+<span class="cstat-no" title="statement not covered">  logEvents(generator.name, gulpInst);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (process.cwd() !== env.cwd) {</span>
+<span class="cstat-no" title="statement not covered">    process.chdir(env.cwd);</span>
+<span class="cstat-no" title="statement not covered">    gutil.log('Working directory changed to', chalk.magenta(env.cwd));</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered">  process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    if (tasksFlag) {</span>
+<span class="cstat-no" title="statement not covered">      return logTasks(generator.name, gulpInst);</span>
+    }
+<span class="cstat-no" title="statement not covered">    gulpInst.start.apply(gulpInst, toRun);</span>
+  });
+}
+&nbsp;
+function logGenerators(generators) {
+  var tree = {
+    label: 'Installed generators',
+    nodes: generators.map(<span class="fstat-no" title="function not covered">function (gen) {</span>
+<span class="cstat-no" title="statement not covered">      return {label: gen.name + (gen.pkg.version ? chalk.grey(' (' + gen.pkg.version + ')') : '')};</span>
+    })
+  };
+  archy(tree).split('\n').forEach(function(v) {
+    if (v.trim().length === 0) return;
+    log(v);
+  });
+}
+&nbsp;
+<span class="fstat-no" title="function not covered">function logTasks(name, localGulp) {</span>
+<span class="cstat-no" title="statement not covered">  var tree = taskTree(localGulp.tasks);</span>
+<span class="cstat-no" title="statement not covered">  tree.label = 'Tasks for generator ' + chalk.magenta(name);</span>
+<span class="cstat-no" title="statement not covered">  archy(tree).split('\n').forEach(<span class="fstat-no" title="function not covered">function(v) {</span></span>
+<span class="cstat-no" title="statement not covered">    if (v.trim().length === 0) <span class="cstat-no" title="statement not covered">return;</span></span>
+<span class="cstat-no" title="statement not covered">    gutil.log(v);</span>
+  });
+}
+&nbsp;
+// format orchestrator errors
+<span class="fstat-no" title="function not covered">function formatError(e) {</span>
+<span class="cstat-no" title="statement not covered">  if (!e.err) <span class="cstat-no" title="statement not covered">return e.message;</span></span>
+<span class="cstat-no" title="statement not covered">  if (e.err.message) <span class="cstat-no" title="statement not covered">return e.err.message;</span></span>
+<span class="cstat-no" title="statement not covered">  return JSON.stringify(e.err);</span>
+}
+&nbsp;
+// wire up logging events
+<span class="fstat-no" title="function not covered">function logEvents(name, gulpInst) {</span>
+<span class="cstat-no" title="statement not covered">  gulpInst.on('task_start', <span class="fstat-no" title="function not covered">function(e) {</span></span>
+<span class="cstat-no" title="statement not covered">    gutil.log('Starting', "'" + chalk.cyan(name + ':' + e.task) + "'...");</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered">  gulpInst.on('task_stop', <span class="fstat-no" title="function not covered">function(e) {</span></span>
+<span class="cstat-no" title="statement not covered">    var time = prettyTime(e.hrDuration);</span>
+<span class="cstat-no" title="statement not covered">    gutil.log('Finished', "'" + chalk.cyan(name + ':' + e.task) + "'", 'after', chalk.magenta(time));</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered">  gulpInst.on('task_err', <span class="fstat-no" title="function not covered">function(e) {</span></span>
+<span class="cstat-no" title="statement not covered">    var msg = formatError(e);</span>
+<span class="cstat-no" title="statement not covered">    var time = prettyTime(e.hrDuration);</span>
+<span class="cstat-no" title="statement not covered">    gutil.log("'" + chalk.cyan(name + ':' + e.task) + "'", 'errored after', chalk.magenta(time), chalk.red(msg));</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered">  gulpInst.on('task_not_found', <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">    log(chalk.red("Task '" + err.task + "' was not defined in `slush-" + name + "` but you tried to run it."));</span>
+<span class="cstat-no" title="statement not covered">    process.exit(1);</span>
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered">  gulpInst.on('stop', <span class="fstat-no" title="function not covered">function () {</span></span>
+<span class="cstat-no" title="statement not covered">    log('Scaffolding done');</span>
+  });
+}
+&nbsp;
+function getGenerator (name) {
+  return getAllGenerators().filter(<span class="fstat-no" title="function not covered">function (gen) {</span>
+<span class="cstat-no" title="statement not covered">    return gen.name === name;</span>
+  })[0];
+}
+&nbsp;
+function getAllGenerators () {
+  return findGenerators(getModulesPaths());
+}
+&nbsp;
+function getModulesPaths () {
+  <span class="missing-if-branch" title="else path not taken">E</span>if (process.env.NODE_ENV === 'test') {
+    return [path.join(__dirname, '..', 'test')];
+  }
+<span class="cstat-no" title="statement not covered">  var sep = (process.platform === 'win32') ? ';' : ':';</span>
+<span class="cstat-no" title="statement not covered">  var paths = [];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered">  if (process.env.NODE_PATH) {</span>
+<span class="cstat-no" title="statement not covered">    paths = paths.concat(process.env.NODE_PATH.split(sep));</span>
+  } else {
+<span class="cstat-no" title="statement not covered">    if (process.platform === 'win32') {</span>
+<span class="cstat-no" title="statement not covered">      paths.push(path.join(process.env.APPDATA, 'npm', 'node_modules'));</span>
+    } else {
+<span class="cstat-no" title="statement not covered">      paths.push('/usr/lib/node_modules');</span>
+    }
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered">  paths.push(path.join(__dirname, '..', '..'));</span>
+<span class="cstat-no" title="statement not covered">  paths.push.apply(paths, require.main.paths);</span>
+<span class="cstat-no" title="statement not covered">  return paths.filter(<span class="fstat-no" title="function not covered">function(path, index, all){</span></span>
+<span class="cstat-no" title="statement not covered">    return all.lastIndexOf(path) === index;</span>
+  });
+}
+&nbsp;
+function findGenerators (searchpaths) {
+  return searchpaths.reduce(function (arr, searchpath) {
+    return arr.concat(glob.sync('{@*/,}slush-*', {cwd: searchpath, stat: true}).map(<span class="fstat-no" title="function not covered">function (match) {</span>
+<span class="cstat-no" title="statement not covered">      var generator = {path: path.join(searchpath, match), name: match.replace(/(?:@[\w]+[\/|\\]+)?slush-/, ""), pkg: {}};</span>
+<span class="cstat-no" title="statement not covered">      try {</span>
+<span class="cstat-no" title="statement not covered">        generator.pkg = require(path.join(searchpath, match, 'package.json'));</span>
+      } catch (e) {
+      }
+<span class="cstat-no" title="statement not covered">      return generator;</span>
+    }));
+  }, []);
+}
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 01:03:36 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 26 2017 04:34:40 GMT+0000 (UTC)</div>
 </div>
 
 
